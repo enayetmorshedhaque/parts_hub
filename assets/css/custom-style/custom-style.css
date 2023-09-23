@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px white inset !important;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.custom-background-color {
+  background-color: #f2f3f7 !important;
+}
+
+.d-block {
+  color: #c2c7d0;
+}
+
+.custom-text-color {
+  color: #070707;
+}
+
+.custom-text-color:hover {
+  color: #070707;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: 400 !important;
+}
+
+.thumb-lg {
+  height: 100px;
+  width: 100px;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.swal2-show {
+  height: 60px;
+  right: 6px !important;
+  border-radius: 0 !important;
+}
+
+.swal2-popup.swal2-toast {
+  padding: 5px 1rem !important;
+}
+
+.error {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+.success {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #28a745;
+}
+
+.left-padding {
+  padding-left: 0.4rem;
+}
+
+.autocomplete #supplierSuggestionList,
+.autocomplete #customerSuggestionList,
+.autocomplete #productAddSupplierSuggestionList,
+.autocomplete #customerSuggestionSells {
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  background: white;
+  z-index: 999 !important;
+}
+
+.autocomplete .results > #supplierSuggestionList,
+.autocomplete .results > #customerSuggestionList,
+.autocomplete .results > #productAddSupplierSuggestionList,
+.autocomplete .results > #customerSuggestionSells {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.autocomplete #supplierSuggestionList li,
+.autocomplete #customerSuggestionList li,
+.autocomplete #productAddSupplierSuggestionList li,
+.autocomplete #customerSuggestionSells li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 1px;
+  z-index: 1;
+  transition: all 0.25s ease-in; /* here */
+}
+
+.autocomplete #supplierSuggestionList li:nth-child(even),
+.autocomplete #customerSuggestionList li:nth-child(even),
+.autocomplete #productAddSupplierSuggestionList li:nth-child(even),
+.autocomplete #customerSuggestionSells li:nth-child(even) {
+  background: white;
+  color: black;
+}
+
+.autocomplete #supplierSuggestionList li:hover,
+.autocomplete #customerSuggestionList li:hover,
+.autocomplete #productAddSupplierSuggestionList li:hover,
+.autocomplete #customerSuggestionSells li:hover {
+  cursor: pointer;
+  background: #4a00e0;
+  color: white;
+}
+
+.autocomplete input[type="text"] {
+  padding: 5px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.badge-success-custom {
+  background-color: #f1f6ee;
+  color: #63914a;
+  font-weight: 500;
+  padding: 4px 10px;
+}
+
+.table-wrapper {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table thead th {
+  border-top: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 290px) {
+  .w-custom {
+    width: 100% !important;
+  }
+  .custom-icon-size {
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .w-custom {
+    width: 75% !important;
+  }
+}
+
+.w-custom {
+  width: 50%;
+}
+
+@media (max-width: 1023px) {
+  .custom-col-6 {
+    width: 50% !important;
+  }
+}
