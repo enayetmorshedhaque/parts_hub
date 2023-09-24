@@ -56,6 +56,14 @@
             padding-right: 25px;
         }
 
+        .table thead th {
+            border-bottom: 1px solid #f1f1f1;
+            font-size: 13px;
+            color: #060606;
+            background: #f8f9fd;
+            text-transform: uppercase;
+        }
+
         .table td,
         .table th {
             border-top: 1px solid #f1f1f1;
@@ -67,6 +75,7 @@
         .table td,
         .table th {
             vertical-align: middle;
+            text-align: center;
         }
 
         .table> :not(caption)>*>* {
@@ -116,6 +125,13 @@
             --bs-btn-padding-x: 0.5rem;
             --bs-btn-font-size: 0.76563rem;
             --bs-btn-border-radius: 4px;
+        }
+
+        .custom-btn,
+        .custom-btn:hover {
+            color: #fff;
+            border-color: #712cf9;
+            background-color: #712cf9;
         }
     </style>
 </head>
@@ -369,20 +385,20 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="float-right">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    Create Invoice
-                                </a>
-                                <a href="#" class="btn btn-sm btn-primary">
+                                <a href="#" class="btn btn-sm bg-primary">
                                     Create Quotation
                                 </a>
+                                <a href="#" class="btn btn-sm bg-primary">
+                                    Create Invoice
+                                </a>
                                 <a href="#" data-size="lg" data-url="#" data-ajax-popup="true" title=""
-                                    data-bs-toggle="tooltip" data-original-title="Edit" class="btn btn-sm btn-warning"
+                                    data-bs-toggle="tooltip" data-original-title="Edit" class="btn btn-sm bg-primary"
                                     data-bs-original-title="Edit Customer">
                                     <i class="fa-solid fa-pencil text-white"></i>
                                 </a>
                                 <a href="#" data-size="lg" data-url="#" data-ajax-popup="true" title=""
-                                    data-bs-toggle="tooltip" data-original-title="Edit" class="btn btn-sm btn-danger"
-                                    data-bs-original-title="Edit Customer">
+                                    data-bs-toggle="tooltip" data-original-title="Delete" class="btn btn-sm btn-danger"
+                                    data-bs-original-title="Delete Customer">
                                     <i class="fa-solid fa-trash"></i>
                                 </a>
                             </div>
@@ -544,11 +560,68 @@
                     </div>
 
                     <div class="row">
+                        <div class="col-lg-12 mb-2">
+                            <h4 class="text-uppercase">Warranty Summary</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 mb-2">
+                            <div class="card rounded-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="p-2">
+                                        <h6 class="fw-bold mb-1">11
+                                        </h6>
+                                        <p class="card-text mb-0">Products Purchased</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card rounded-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="p-2">
+                                        <h6 class="fw-bold mb-1">5
+                                        </h6>
+                                        <p class="card-text mb-0">Warranty</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card rounded-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="p-2">
+                                        <h6 class="fw-bold mb-1">0
+                                        </h6>
+                                        <p class="card-text mb-0">Warranty Expiring Soon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <div class="card rounded-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="p-2">
+                                        <h6 class="fw-bold mb-1">0
+                                        </h6>
+                                        <p class="card-text mb-0">Warranty Expired</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 mb-2">
+                            <h4 class="text-uppercase">offered proposals</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-12 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body table-border-style table-border-style">
-                                    <h5 class="d-inline-block mb-5">Proposal</h5>
-
                                     <div class="table-responsive">
                                         <table class="table ">
                                             <thead>
@@ -650,10 +723,15 @@
                     </div>
 
                     <div class="row">
+                        <div class="col-lg-12 mb-2">
+                            <h4 class="text-uppercase">invoices issued</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-12">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body table-border-style table-border-style">
-                                    <h5 class="d-inline-block mb-5">Invoice</h5>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
@@ -684,7 +762,7 @@
             <div class="float-right d-none d-sm-block">
                 <b>Version</b> 3.2.0
             </div>
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
+            <strong>Copyright &copy; 2023 <a href="https://partshub-bd.com">PARTS HUB</a>.</strong> All rights
             reserved.
         </footer>
 
@@ -702,6 +780,11 @@
     <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../assets/js/theme-js/adminlte.min.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
