@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARTS HUB | ADMIN | CUSTOMER PROFILE</title>
+    <title>PARTS HUB | ADMIN | CUSTOMERS</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../assets/css/fontawesome/all.min.css">
@@ -75,7 +75,6 @@
         .table td,
         .table th {
             vertical-align: middle;
-            text-align: center;
         }
 
         .table> :not(caption)>*>* {
@@ -372,34 +371,30 @@
                 <div class="container-fluid">
                     <div class="row align-items-center mb-2">
                         <div class="col-sm-6">
-                            <h4 class="page-header mb-0">Manage Customer-Detail</h4>
+                            <h4 class="page-header mb-0">Manage Customers</h4>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
                                     <a href="../dashboard.html">Dashboard</a>
                                 </li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Customer</a>
-                                </li>
-                                <li class="breadcrumb-item active">Mr. Zaahir Hasan Maruf</li>
+                                <li class="breadcrumb-item active">Customers</li>
                             </ol>
                         </div>
                         <div class="col-sm-6">
                             <div class="float-lg-end float-start">
-                                <a href="#" class="btn btn-sm bg-primary">
-                                    Create Quotation
-                                </a>
-                                <a href="#" class="btn btn-sm bg-primary">
-                                    Create Invoice
+                                <a href="#" data-size="lg" data-url="#" data-ajax-popup="true" title=""
+                                    data-bs-toggle="tooltip" data-original-title="Import" class="btn btn-sm bg-primary"
+                                    data-bs-original-title="Import Customer">
+                                    <i class="fa-solid fa-file-import text-white"></i>
                                 </a>
                                 <a href="#" data-size="lg" data-url="#" data-ajax-popup="true" title=""
-                                    data-bs-toggle="tooltip" data-original-title="Edit" class="btn btn-sm bg-primary"
-                                    data-bs-original-title="Edit Customer">
-                                    <i class="fa-solid fa-pencil text-white"></i>
+                                    data-bs-toggle="tooltip" data-original-title="Export" class="btn btn-sm bg-primary"
+                                    data-bs-original-title="Export Customer">
+                                    <i class="fa-solid fa-file-export text-white"></i>
                                 </a>
                                 <a href="#" data-size="lg" data-url="#" data-ajax-popup="true" title=""
-                                    data-bs-toggle="tooltip" data-original-title="Delete" class="btn btn-sm btn-danger"
-                                    data-bs-original-title="Delete Customer">
-                                    <i class="fa-solid fa-trash"></i>
+                                    data-bs-toggle="tooltip" data-original-title="Add" class="btn btn-sm bg-primary"
+                                    data-bs-original-title="Add Customer">
+                                    <i class="fa-solid fa-user-plus text-white"></i>
                                 </a>
                             </div>
                         </div>
@@ -411,220 +406,18 @@
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12 mb-2">
-                            <h4 class="text-uppercase">Customer details</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-header shadow-sm">
-                                    <h5 class="card-title">Customer Info</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text mb-0">Mr. Enayet Morshed Haque</p>
-                                    <p class="card-text mb-0">Email: enayetmorshedhaque@gmail.com</p>
-                                    <p class="card-text mb-0">Contact: 01680-843368</p>
-                                    <p class="card-text mb-0">WhatsApp: 01591-148119</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-header shadow-sm">
-                                    <h5 class="card-title">Billing Info</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text mb-0">Mr. Enayet Morshed Haque</p>
-                                    <p class="card-text mb-0">Level-07, Shop-631-633, Suvastu Arcade, 46 & 48, New
-                                        Elephant Road, Dhaka</p>
-                                    <p class="card-text mb-0">Contact: 01680-843368</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-header shadow-sm">
-                                    <h5 class="card-title">Shipping Info</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text mb-0">Mr. Enayet Morshed Haque</p>
-                                    <p class="card-text mb-0">Level-07, Shop-631-633, Suvastu Arcade, 46 & 48, New
-                                        Elephant Road, Dhaka</p>
-                                    <p class="card-text mb-0">Contact: 01680-843368</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 mb-2">
-                            <h4 class="text-uppercase">Customer Summary</h4>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">#CUST00001</h6>
-                                        <p class="card-text mb-0">Customer Id</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">September 23, 2023</h6>
-                                        <p class="card-text mb-0">Date of Creation</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">07</h6>
-                                        <p class="card-text mb-0">Quotation Offered</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">07</h6>
-                                        <p class="card-text mb-0">Quotation Accepted</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 mb-2">
-                            <h4 class="text-uppercase">Accounts Summary</h4>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i> 0
-                                        </h6>
-                                        <p class="card-text mb-0">Due Balance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            40,600</h6>
-                                        <p class="card-text mb-0">Sum of Total Sell</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            5,800</h6>
-                                        <p class="card-text mb-0">Average Sell</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i> 5,000
-                                        </h6>
-                                        <p class="card-text mb-0">Amount Sell Rejected</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 mb-2">
-                            <h4 class="text-uppercase">Warranty Summary</h4>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">11
-                                        </h6>
-                                        <p class="card-text mb-0">Products Purchased</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">5
-                                        </h6>
-                                        <p class="card-text mb-0">Warranty</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">0
-                                        </h6>
-                                        <p class="card-text mb-0">Warranty Expiring Soon</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">0
-                                        </h6>
-                                        <p class="card-text mb-0">Warranty Expired</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-12 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-header">
                                     <div class="row align-items-center">
                                         <div class="col-lg-6 mb-2">
-                                            <h4 class="text-uppercase mb-0">offered quotations</h4>
+                                            <h4 class="mb-0">Customer Entry Dropdown</h4>
                                         </div>
                                         <div class="col-lg-6 mb-2">
                                             <div class="float-lg-end float-start">
                                                 <div class="input-group">
                                                     <input type="text" class="form-control"
-                                                        placeholder="Search Quotation" aria-label="Username"
+                                                        placeholder="Search Customer" aria-label="search_customer"
                                                         aria-describedby="basic-addon1">
                                                 </div>
                                             </div>
@@ -646,7 +439,7 @@
                                                                     <li class="page-item disabled">
                                                                         <a class="page-link">Previous</a>
                                                                     </li>
-                                                                    <li class="page-item"><a class="page-link"
+                                                                    <li class="page-item"><a class="page-link active"
                                                                             href="#">1</a></li>
                                                                     <li class="page-item"><a class="page-link"
                                                                             href="#">2</a></li>
@@ -663,56 +456,26 @@
                                             </caption>
                                             <thead>
                                                 <tr>
-                                                    <th>Proposal</th>
-                                                    <th>Issue Date</th>
-                                                    <th>Amount</th>
-                                                    <th>Status</th>
-                                                    <th width="10%"> Action</th>
+                                                    <th>#</th>
+                                                    <th>Name</th>
+                                                    <th>Contact</th>
+                                                    <th>Email</th>
+                                                    <th class="text-center">Balance</th>
+                                                    <th class="text-center" width="10%"> Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="Id">
-                                                        <a href="#" class="btn btn-outline-primary">#PROP00002
+                                                        <a href="#" class="btn btn-outline-primary">#CUST00001
                                                         </a>
                                                     </td>
-                                                    <td>Sep 24, 2023</td>
-                                                    <td>$18,050.00</td>
-                                                    <td>
-                                                        <span class="badge bg-primary p-2 px-3 rounded">Draft</span>
-                                                    </td>
-                                                    <td class="Action">
+                                                    <td>Customer-01</td>
+                                                    <td>01712345678</td>
+                                                    <td>customer01@gmail.com</td>
+                                                    <td class="text-center">$18,050.00</td>
+                                                    <td class="Action text-center">
                                                         <span>
-                                                            <div class="action-btn bg-warning ms-2">
-                                                                <form method="GET" action="#" accept-charset="UTF-8"
-                                                                    id="proposal-form-2">
-                                                                    <a href="#"
-                                                                        class="mx-3 btn btn-sm  align-items-center bs-pass-para"
-                                                                        data-bs-toggle="tooltip"
-                                                                        data-original-title="Convert to Invoice"
-                                                                        title=""
-                                                                        data-confirm="You want to confirm convert to invoice. Press Yes to continue or Cancel to go back"
-                                                                        data-confirm-yes="document.getElementById('proposal-form-2').submit();"
-                                                                        data-bs-original-title="Convert to Invoice">
-                                                                        <i class="fa-solid fa-exchange text-white"></i>
-                                                                    </a>
-                                                                </form>
-                                                            </div>
-                                                            <div class="action-btn bg-primary ms-2">
-                                                                <form method="GET" action="#" accept-charset="UTF-8"
-                                                                    id="duplicate-form-2">
-                                                                    <a href="#"
-                                                                        class="mx-3 btn btn-sm align-items-center bs-pass-para"
-                                                                        data-bs-toggle="tooltip"
-                                                                        data-original-title="Duplicate" title=""
-                                                                        data-confirm="You want to confirm duplicate this invoice. Press Yes to continue or Cancel to go back"
-                                                                        data-confirm-yes="document.getElementById('duplicate-form-2').submit();"
-                                                                        data-bs-original-title="Duplicate Proposal">
-                                                                        <i
-                                                                            class="fa-solid fa-copy text-white font-weight-normal"></i>
-                                                                    </a>
-                                                                </form>
-                                                            </div>
                                                             <div class="action-btn bg-info ms-2">
                                                                 <a href="#" class="mx-3 btn btn-sm align-items-center"
                                                                     data-bs-toggle="tooltip" title=""
@@ -751,73 +514,6 @@
                                                         </span>
                                                     </td>
                                                 </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-header">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6 mb-2">
-                                            <h4 class="text-uppercase mb-0">issued invoices</h4>
-                                        </div>
-                                        <div class="col-lg-6 mb-2">
-                                            <div class="float-lg-end float-start">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search Invoice"
-                                                        aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body table-border-style table-border-style">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <caption>
-                                                <div class="px-2">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-6">
-                                                            <p class="mb-0">Showing 0 to 0 of 0 entries</p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <nav aria-label="Page navigation example">
-                                                                <ul class="pagination justify-content-end mb-0">
-                                                                    <li class="page-item disabled">
-                                                                        <a class="page-link">Previous</a>
-                                                                    </li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">1</a></li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">2</a></li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">3</a></li>
-                                                                    <li class="page-item">
-                                                                        <a class="page-link" href="#">Next</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </nav>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </caption>
-                                            <thead>
-                                                <tr>
-                                                    <th>Invoice</th>
-                                                    <th>Issue Date</th>
-                                                    <th>Due Date</th>
-                                                    <th>Due Amount</th>
-                                                    <th>Status</th>
-                                                    <th width="10%"> Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
                                             </tbody>
                                         </table>
                                     </div>
