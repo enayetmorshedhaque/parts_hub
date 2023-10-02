@@ -18,135 +18,12 @@
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../../assets/css/OverlayScrollbars/OverlayScrollbars.min.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../../assets/css/custom-style/custom-style.css">
 
-        html,
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .navbar-nav {
-            margin-left: -8px;
-        }
-
-        .bg-primary {
-            background-image: linear-gradient(#416baf, #365fa2, #416baf);
-        }
-
-        .rounded {
-            border-radius: 10px !important;
-        }
-
-        .p-2 {
-            padding: 0.5rem !important;
-        }
-
-        .breadcrumb {
-            font-size: 14px;
-        }
-
-        .card-title {
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .card:not(.table-card) .table tr td:last-child,
-        .card:not(.table-card) .table tr th:last-child {
-            padding-right: 25px;
-        }
-
-        label:not(.form-check-label):not(.custom-file-label) {
-            font-weight: 400;
-        }
-
-        .table thead th {
-            border-bottom: 1px solid #f1f1f1;
-            font-size: 13px;
-            color: #060606;
-            background: #f8f9fd;
-            text-transform: uppercase;
-        }
-
-        .table td,
-        .table th {
-            border-top: 1px solid #f1f1f1;
-            border-bottom: 1px solid #f1f1f1;
-            white-space: nowrap;
-            padding: 0.7rem 0.75rem;
-        }
-
-        .table td,
-        .table th {
-            vertical-align: middle;
-        }
-
-        .table> :not(caption)>*>* {
-            padding: 0.9rem 0.75rem;
-            background-color: var(--bs-table-bg);
-            border-bottom-width: 1px;
-            box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-        }
-
-        .action-btn {
-            width: 29px;
-            height: 28px;
-            border-radius: 9.3552px;
-            color: #fff;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .bg-warning {
-            --bs-bg-opacity: 1;
-            background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
-        }
-
-        .ms-2 {
-            margin-left: 0.5rem !important;
-        }
-
-        .btn {
-            font-size: 14px;
-        }
-
-        .mx-3 {
-            margin-right: 1rem !important;
-            margin-left: 1rem !important;
-        }
-
-        .align-items-center {
-            align-items: center !important;
-        }
-
-        .btn-sm,
-        .btn-group-sm>.btn {
-            --bs-btn-padding-y: 0.25rem;
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-font-size: 0.76563rem;
-            --bs-btn-border-radius: 4px;
-        }
-
-        .custom-btn,
-        .custom-btn:hover {
-            color: #fff;
-            border-color: #712cf9;
-            background-color: #712cf9;
-        }
-
-        .custom-column-6 {
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding-right: 7px;
-            padding-left: 7px;
-        }
-    </style>
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-fixed">
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
@@ -195,7 +72,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="../dashboard.html" class="brand-link">
+            <a href="../dashboard/dashboard.html" class="brand-link">
                 <img src="../../assets/images/logo/parts-hub-logo.png" alt="Parts Hub Logo"
                     class="brand-image img-circle elevation-4">
                 <span class="brand-text font-weight-bold">PARTS HUB</span>
@@ -701,7 +578,7 @@
                             <h4 class="page-header mb-0">Manage Customers</h4>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="../dashboard.html">Dashboard</a>
+                                    <a href="../dashboard/dashboard.html">Dashboard</a>
                                 </li>
                                 <li class="breadcrumb-item active">Customers</li>
                             </ol>
@@ -1056,8 +933,13 @@
 
     <!-- jQuery -->
     <script src="../../assets/js/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
+
+    <!-- Bootstrap 5 -->
     <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- overlayScrollbars -->
+    <script src="../../assets/js/overlayScrollbars/jquery.overlayScrollbars.min.js"></script>
+
     <!-- AdminLTE App -->
     <script src="../../assets/js/theme-js/adminlte.min.js"></script>
 
