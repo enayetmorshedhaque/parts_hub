@@ -211,35 +211,465 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                   with font-awesome or any other icon font library -->
+                         with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <a href="../dashboard/dashboard.html" class="nav-link">
+                                <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
-                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon far fa-plus-square"></i>
+                        <li class="nav-item">
+                            <a href="../suppliers/suppliers.html" class="nav-link active">
+                                <i class="nav-icon fa-solid fa-warehouse"></i>
                                 <p>
-                                    Extras
+                                    Suppliers
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../customers/customers.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-users"></i>
+                                <p>
+                                    Customers
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../product/add-product.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-parachute-box"></i>
+                                <p>
+                                    Product
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../examples/blank.html" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Blank Page</p>
+                                    <a href="../product/categories.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Categories</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../../starter.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Starter Page</p>
+                                    <a href="../product/sub-categories.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Sub Categories</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../product/add-product.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Add Product</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../purchase/purchase.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-receipt"></i>
+                                <p>
+                                    Purchase
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../quotations/quotations.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-file-lines"></i>
+                                <p>
+                                    Quotations
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../sells/sells.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-file-invoice-dollar"></i>
+                                <p>
+                                    Invoices
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-boxes-stacked"></i>
+                                <p>
+                                    Inventory
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../inventory/product-list.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Product List</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../inventory/product-stock.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Product Stock</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-vault"></i>
+                                <p>
+                                    Income
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../income/invoices.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Invoices</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../income/revenue.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Revenue</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../income/credit-notes.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Credit Notes</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-sack-xmark"></i>
+                                <p>
+                                    Expense
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../expense/bills.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Bills</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../expense/payments.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Payments</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../income/debit-notes.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Debit Notes</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-calculator"></i>
+                                <p>
+                                    Accounting
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../accounting/budget-planner.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Budget Planner</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../accounting/financial-goal.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Financial Goal</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pos/pos.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-cash-register"></i>
+                                <p>
+                                    POS
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-users-gear"></i>
+                                <p>
+                                    HRM & Payroll
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/dashboard.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/employee.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Employee</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/payroll.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Payroll</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/leave-management.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Leave Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/performance.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Performance</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/tarining.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Training</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/recruitment.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Recruitment</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/hr-admin.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>HR Admin</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/event-setup.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Event Setup</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/meeting.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Meeting</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/employee-assist.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Employee Assist</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/document-setup.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Document Setup</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../hrm-and-payroll/company-policy.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Company Policy</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-chart-line"></i>
+                                <p>
+                                    Reports
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../reports/supplier-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Supplier Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/customer-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Customer Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/inventory-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Inventory Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/purchase-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Purchase Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/quotation-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Quotation Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/sells-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Sells Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/income-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Income Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/expense-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Expense Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/employee-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Employee Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/payroll-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Payroll Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/attendence-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Attendance Report</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../reports/project-report.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Project Report</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-circle-nodes"></i>
+                                <p>
+                                    Project Management
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../project-management/dashboard.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../project-management/projects.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Projects</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../project-management/tasks.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Tasks</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../project-management/timesheet.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Timesheet</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../project-management/bug.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Bug</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../project-management/task-calendar.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Task Calender</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../project-management/tracker.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Tracker</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../warranty-products/warranty-products.html" class="nav-link">
+                                <i class="nav-icon fa-solid fa-shield-halved"></i>
+                                <p>
+                                    Warranty Products
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-user-group"></i>
+                                <p>
+                                    User Management
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../user-management/users.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Users</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../user-management/roles.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>Roles</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa-solid fa-gear"></i>
+                                <p>
+                                    Settings
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../settings/system-settings.html" class="nav-link">
+                                        <i class="fa-regular fa-circle nav-icon"></i>
+                                        <p>System Settings</p>
                                     </a>
                                 </li>
                             </ul>
