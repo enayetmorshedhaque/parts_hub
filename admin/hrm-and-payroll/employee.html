@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARTS HUB | ADMIN | CUSTOMERS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PARTS HUB | ADMIN | HRM & PAYROLL | EMPLOYEE</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../assets/css/fontawesome/all.min.css">
@@ -72,7 +72,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="../dashboard/dashboard.html" class="brand-link">
+            <a href="../dashboard.html" class="brand-link">
                 <img src="../../assets/images/logo/parts-hub-logo.png" alt="Parts Hub Logo"
                     class="brand-image img-circle elevation-4">
                 <span class="brand-text font-weight-bold">PARTS HUB</span>
@@ -98,7 +98,7 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                         with font-awesome or any other icon font library -->
+               with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <a href="../dashboard/dashboard.html" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
@@ -116,7 +116,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../customers/customers.html" class="nav-link active">
+                            <a href="../customers/customers.html" class="nav-link">
                                 <i class="nav-icon fa-solid fa-users"></i>
                                 <p>
                                     Customers
@@ -288,8 +288,8 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
+                        <li class="nav-item menu-is-opening menu-open">
+                            <a href="#" class="nav-link active">
                                 <i class="nav-icon fa-solid fa-users-gear"></i>
                                 <p>
                                     HRM & Payroll
@@ -304,7 +304,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../hrm-and-payroll/employee.html" class="nav-link">
+                                    <a href="../hrm-and-payroll/employee.html" class="nav-link active">
                                         <i class="fa-regular fa-circle nav-icon"></i>
                                         <p>Employee</p>
                                     </a>
@@ -573,32 +573,15 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <div class="container-fluid">
-                    <div class="row align-items-center mb-2">
+                    <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h4 class="page-header mb-0">Manage Customers</h4>
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <a href="../dashboard/dashboard.html">Dashboard</a>
-                                </li>
-                                <li class="breadcrumb-item active">Customers</li>
-                            </ol>
+                            <h1>Blank Page</h1>
                         </div>
                         <div class="col-sm-6">
-                            <div class="float-lg-end float-start">
-                                <button class="btn btn-sm bg-primary">
-                                    <i class="fa-solid fa-file-arrow-up text-white" data-bs-toggle="tooltip"
-                                        data-bs-title="Import Data"></i>
-                                </button>
-                                <button class="btn btn-sm bg-primary">
-                                    <i class="fa-solid fa-file-arrow-down text-white" data-bs-toggle="tooltip"
-                                        data-bs-title="Export Data"></i>
-                                </button>
-                                <button class="btn btn-sm bg-primary" data-bs-toggle="modal"
-                                    data-bs-target="#createNewCustomerModal">
-                                    <i class="fa-solid fa-user-plus text-white" data-bs-toggle="tooltip"
-                                        data-bs-title="New Customer"></i>
-                                </button>
-                            </div>
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Blank Page</li>
+                            </ol>
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->
@@ -606,320 +589,42 @@
 
             <!-- Main content -->
             <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 mb-2">
-                            <div class="card rounded-0 shadow-sm">
-                                <div class="card-header">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6 mb-2">
-                                            <h4 class="mb-0">Customer Entry Dropdown</h4>
-                                        </div>
-                                        <div class="col-lg-6 mb-2">
-                                            <div class="float-lg-end float-start">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Search Customer" aria-label="search_customer"
-                                                        aria-describedby="basic-addon1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body table-border-style table-border-style">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <caption>
-                                                <div class="px-2">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-6">
-                                                            <p class="mb-0">Showing 1 to 1 of 1 entries</p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <nav aria-label="Page navigation example">
-                                                                <ul class="pagination justify-content-end mb-0">
-                                                                    <li class="page-item disabled">
-                                                                        <a class="page-link">Previous</a>
-                                                                    </li>
-                                                                    <li class="page-item"><a class="page-link active"
-                                                                            href="#">1</a></li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">2</a></li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">3</a></li>
-                                                                    <li class="page-item">
-                                                                        <a class="page-link" href="#">Next</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </nav>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </caption>
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Name</th>
-                                                    <th>Contact</th>
-                                                    <th>Email</th>
-                                                    <th class="text-center">Balance</th>
-                                                    <th class="text-center" width="10%"> Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="Id">
-                                                        <a href="../customers/customer-profile.html"
-                                                            class="btn btn-outline-primary">#CUST00001
-                                                        </a>
-                                                    </td>
-                                                    <td>Customer-01</td>
-                                                    <td>01712345678</td>
-                                                    <td>customer01@gmail.com</td>
-                                                    <td class="text-center">$18,050.00</td>
-                                                    <td class="Action text-center">
-                                                        <span>
-                                                            <div class="action-btn bg-info ms-2">
-                                                                <a href="#" class="mx-3 btn btn-sm align-items-center"
-                                                                    data-bs-toggle="tooltip" title=""
-                                                                    data-original-title="Detail"
-                                                                    data-bs-original-title="Show">
-                                                                    <i
-                                                                        class="fa-solid fa-eye text-white font-weight-normal"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="action-btn bg-primary ms-2">
-                                                                <a href="#" class="mx-3 btn btn-sm align-items-center"
-                                                                    data-bs-toggle="tooltip" title=""
-                                                                    data-original-title="Edit"
-                                                                    data-bs-original-title="Edit">
-                                                                    <i class="fa-solid fa-pencil text-white"></i>
-                                                                </a>
-                                                            </div>
 
-                                                            <div class="action-btn bg-danger ms-2">
-                                                                <form method="POST" action="#" accept-charset="UTF-8"
-                                                                    id="delete-form-2"><input name="_method"
-                                                                        type="hidden" value="DELETE"><input
-                                                                        name="_token" type="hidden"
-                                                                        value="wmyqh5qK0YWwn5m9YL3wd5HkYMu9QxplOPUzRSDH">
-                                                                    <a href="#"
-                                                                        class="mx-3 btn btn-sm align-items-center bs-pass-para"
-                                                                        data-bs-toggle="tooltip" title=""
-                                                                        data-original-title="Delete"
-                                                                        data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                                        data-confirm-yes="document.getElementById('delete-form-2').submit();"
-                                                                        data-bs-original-title="Delete">
-                                                                        <i class="fa-solid fa-trash text-white"></i>
-                                                                    </a>
-                                                                </form>
-                                                            </div>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Title</h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                                <i class="fas fa-times"></i>
+                            </button>
                         </div>
                     </div>
+                    <div class="card-body">
+                        Start creating your amazing application!
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        Footer
+                    </div>
+                    <!-- /.card-footer-->
                 </div>
+                <!-- /.card -->
+
             </section>
             <!-- /.content -->
-            <div class="modal fade" id="createNewCustomerModal" tabindex="-1"
-                aria-labelledby="createNewCustomerModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="createNewCustomerModalLabel">Create New Customer</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="fw-bold text-uppercase mb-1">basic info</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <select class="form-select rounded-0" id="customer_title" name="customer_title">
-                                            <option value="">Select Title</option>
-                                            <option value="1">Mr.</option>
-                                            <option value="2">Mrs.</option>
-                                            <option value="3">Miss</option>
-                                            <option value="4">Ms.</option>
-                                            <option value="5">Other</option>
-                                        </select>
-                                        <label for="customer_title">Customer Title</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0" id="customer_name"
-                                            placeholder="John Doe">
-                                        <label for="customer_name">Customer Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control rounded-0" id="customer_email"
-                                            placeholder="name@example.com">
-                                        <label for="customer_email">Customer Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control rounded-0" id="customer_contact"
-                                            placeholder="01712345678">
-                                        <label for="customer_contact">Customer Contact</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <select class="form-select rounded-0" id="customer_messaging_service"
-                                            name="customer_messaging_service">
-                                            <option value="">Select Social Messaging
-                                                Service</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        <label for="customer_messaging_service">Social Messaging Service</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control rounded-0"
-                                            id="customer_messaging_number" placeholder="01712345678">
-                                        <label for="customer_messaging_number">Social Messaging Number</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="fw-bold text-uppercase mb-1">shipping info</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="shipping_address_customer_name" placeholder="John Doe">
-                                        <label for="shipping_address_customer_name">Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control rounded-0"
-                                            id="shipping_customer_contact" placeholder="01712345678">
-                                        <label for="shipping_customer_contact">Contact Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <textarea type="text" class="form-control rounded-0"
-                                            id="shipping_address_customer" placeholder="Supplier Address"
-                                            name="shipping_address_customer"></textarea>
-                                        <label for="shipping_address_customer" class="form-label">Address</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="shipping_address_customer_city" placeholder="John Doe">
-                                        <label for="shipping_address_customer_city">City</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="shipping_address_customer_district" placeholder="John Doe">
-                                        <label for="shipping_address_customer_district">District</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="shipping_address_customer_post_code" placeholder="John Doe">
-                                        <label for="shipping_address_customer_post_code">Post Code</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center mb-2">
-                                <div class="custom-column-6">
-                                    <p class="fw-bold text-uppercase mb-1">billing info</p>
-                                </div>
-                                <div class="custom-column-6">
-                                    <div class="float-lg-end float-end mb-1">
-                                        <button class="btn btn-sm bg-primary">Same As Above</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="billing_address_customer_name" placeholder="John Doe">
-                                        <label for="billing_address_customer_name">Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control rounded-0"
-                                            id="billing_customer_contact" placeholder="01712345678">
-                                        <label for="billing_customer_contact">Contact Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <textarea type="text" class="form-control rounded-0"
-                                            id="billing_address_customer" placeholder="Supplier Address"
-                                            name="billing_address_customer"></textarea>
-                                        <label for="billing_address_customer" class="form-label">Address</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="billing_address_customer_city" placeholder="John Doe">
-                                        <label for="billing_address_customer_city">City</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="billing_address_customer_district" placeholder="John Doe">
-                                        <label for="billing_address_customer_district">District</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control rounded-0"
-                                            id="billing_address_customer_post_code" placeholder="John Doe">
-                                        <label for="billing_address_customer_post_code">Post Code</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn bg-primary">Create New Customer</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
         <!-- /.content-wrapper -->
 
-
-        <footer class="main-footer text-center" id="sentence">
-            <strong>Copyright &copy; 2023 <a href="https://partshub-bd.com">PARTS HUB</a>.</strong> All rights
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
             reserved.
         </footer>
 
@@ -943,16 +648,6 @@
     <!-- AdminLTE App -->
     <script src="../../assets/js/theme-js/adminlte.min.js"></script>
 
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-
-        const createNewCustomerModal = new bootstrap.Modal(document.getElementById('createNewCustomerModal'));
-    </script>
-
-    <script src="../../assets/js/custom-js/script.js"></script>
 </body>
 
 </html>
