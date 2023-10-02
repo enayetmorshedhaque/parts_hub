@@ -18,122 +18,8 @@
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../../assets/css/OverlayScrollbars/OverlayScrollbars.min.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-        html,
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .navbar-nav {
-            margin-left: -8px;
-        }
-
-        .bg-primary {
-            background-image: linear-gradient(#416baf, #365fa2, #416baf);
-        }
-
-        .rounded {
-            border-radius: 10px !important;
-        }
-
-        .p-2 {
-            padding: 0.5rem !important;
-        }
-
-        .breadcrumb {
-            font-size: 14px;
-        }
-
-        .card-title {
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .card:not(.table-card) .table tr td:last-child,
-        .card:not(.table-card) .table tr th:last-child {
-            padding-right: 25px;
-        }
-
-        .table thead th {
-            border-bottom: 1px solid #f1f1f1;
-            font-size: 13px;
-            color: #060606;
-            background: #f8f9fd;
-            text-transform: uppercase;
-        }
-
-        .table td,
-        .table th {
-            border-top: 1px solid #f1f1f1;
-            border-bottom: 1px solid #f1f1f1;
-            white-space: nowrap;
-            padding: 0.7rem 0.75rem;
-        }
-
-        .table td,
-        .table th {
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        .table> :not(caption)>*>* {
-            padding: 0.9rem 0.75rem;
-            background-color: var(--bs-table-bg);
-            border-bottom-width: 1px;
-            box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-        }
-
-        .action-btn {
-            width: 29px;
-            height: 28px;
-            border-radius: 9.3552px;
-            color: #fff;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .bg-warning {
-            --bs-bg-opacity: 1;
-            background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
-        }
-
-        .ms-2 {
-            margin-left: 0.5rem !important;
-        }
-
-        .btn {
-            font-size: 14px;
-        }
-
-        .mx-3 {
-            margin-right: 1rem !important;
-            margin-left: 1rem !important;
-        }
-
-        .align-items-center {
-            align-items: center !important;
-        }
-
-        .btn-sm,
-        .btn-group-sm>.btn {
-            --bs-btn-padding-y: 0.25rem;
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-font-size: 0.76563rem;
-            --bs-btn-border-radius: 4px;
-        }
-
-        .custom-btn,
-        .custom-btn:hover {
-            color: #fff;
-            border-color: #712cf9;
-            background-color: #712cf9;
-        }
-    </style>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../../assets/css/custom-style/custom-style.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -783,9 +669,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">#CUST00001</h6>
-                                        <p class="card-text mb-0">Customer Id</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-hashtag fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0">
+                                                    <span class="counter">
+                                                        CUST00001
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span>
+                                                </h5>
+                                                <h6 class="fw-normal mb-0">Customer Id</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -793,9 +689,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">September 23, 2023</h6>
-                                        <p class="card-text mb-0">Date of Creation</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-calendar fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0">
+                                                    <span class="counter">
+                                                        23/09/2023
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span>
+                                                </h5>
+                                                <h6 class="fw-normal mb-0">Date of Creation</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -803,9 +709,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">07</h6>
-                                        <p class="card-text mb-0">Quotation Offered</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-file-lines fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0">
+                                                    <span class="counter">
+                                                        07
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span>
+                                                </h5>
+                                                <h6 class="fw-normal mb-0">Quotation Offered</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -813,9 +729,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">07</h6>
-                                        <p class="card-text mb-0">Quotation Accepted</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-circle-check fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0">
+                                                    <span class="counter">
+                                                        07
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span>
+                                                </h5>
+                                                <h6 class="fw-normal mb-0">Quotation Accepted</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -832,10 +758,20 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i> 0
-                                        </h6>
-                                        <p class="card-text mb-0">Due Balance</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i
+                                                class="fa-solid fa-file-circle-exclamation fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i> <span
+                                                        class="counter">
+                                                        0
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="fw-normal mb-0">Due Balance</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -843,10 +779,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            40,600</h6>
-                                        <p class="card-text mb-0">Sum of Total Sell</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-chart-line fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i> <span
+                                                        class="counter">
+                                                        40,600
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="fw-normal mb-0">Total Sell</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -854,10 +799,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i>
-                                            5,800</h6>
-                                        <p class="card-text mb-0">Average Sell</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-circle-half-stroke fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i> <span
+                                                        class="counter">
+                                                        5,800
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="fw-normal mb-0">Average Sell</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -865,10 +819,19 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1"><i class="fa-solid fa-bangladeshi-taka-sign"></i> 5,000
-                                        </h6>
-                                        <p class="card-text mb-0">Amount Sell Rejected</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-ban fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><i
+                                                        class="fa-solid fa-bangladeshi-taka-sign"></i> <span
+                                                        class="counter">
+                                                        5,000
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="fw-normal mb-0">Sell Rejected</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -885,10 +848,17 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">11
-                                        </h6>
-                                        <p class="card-text mb-0">Products Purchased</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-shield-halved fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><span class="counter">
+                                                        20
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="mb-0 fw-normal custom-text-color">Total Warranty</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -896,10 +866,17 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">5
-                                        </h6>
-                                        <p class="card-text mb-0">Warranty</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-shield fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><span class="counter">
+                                                        5
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="mb-0 fw-normal custom-text-color">On-going Warranty</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -907,10 +884,17 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">0
-                                        </h6>
-                                        <p class="card-text mb-0">Warranty Expiring Soon</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-hourglass-half fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><span class="counter">
+                                                        7
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="fw-normal mb-0">Expiring Soon</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -918,10 +902,17 @@
                         <div class="col-md-3 mb-2">
                             <div class="card rounded-0 shadow-sm">
                                 <div class="card-body text-center">
-                                    <div class="p-2">
-                                        <h6 class="fw-bold mb-1">0
-                                        </h6>
-                                        <p class="card-text mb-0">Warranty Expired</p>
+                                    <div class="custom-text-color">
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <i class="fa-solid fa-circle-xmark fs-1 custom-icon-size mb-0"></i>
+                                            <div class="text-center">
+                                                <h5 class="fw-bold mb-0"><span class="counter">
+                                                        08
+                                                        <!--?php echo $_SESSION["total_invoices"] ?-->
+                                                    </span> </h5>
+                                                <h6 class="fw-normal mb-0">Expired Warranty</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
