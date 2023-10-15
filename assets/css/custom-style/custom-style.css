@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  font-family: "Roboto", sans-serif;
+body {
+  font-family: "Rubik", sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -16,6 +16,53 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 40px white inset !important;
 }
+
+#invoiceTable {
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 14px;
+  width: 100%;
+  border-spacing: 2px;
+  border: 1px solid #efeeef;
+}
+
+#invoiceTable thead th {
+  text-align: center;
+  padding: 8px;
+  color: white;
+  background-color: #6539c0;
+}
+
+#invoiceTable tbody td {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+.items-description ul {
+  font-weight: bold;
+  padding-left: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.items-description {
+  word-break: break-word;
+}
+
+tr:nth-child(odd) {
+  background-color: #efebf9;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+/* .items-description {
+  background-color: white;
+} */
 
 .w-35 {
   width: 35%;
@@ -157,10 +204,6 @@ label:not(.form-check-label):not(.custom-file-label) {
   margin-left: 1rem !important;
 }
 
-.align-items-center {
-  align-items: center !important;
-}
-
 .btn-sm,
 .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.25rem;
@@ -178,6 +221,13 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .breadcrumb {
   font-size: 14px;
+}
+
+.billCard {
+  font-family: "Open Sans", sans-serif !important;
+  /* background-image: url(../../images/bill/bill-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain; */
 }
 
 .card-title {
@@ -252,10 +302,6 @@ label:not(.form-check-label):not(.custom-file-label) {
   margin-left: 1rem !important;
 }
 
-.align-items-center {
-  align-items: center !important;
-}
-
 .btn-sm,
 .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.25rem;
@@ -277,6 +323,35 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .rounded {
   border-radius: 10px !important;
+}
+
+#customerDetails .card {
+  background-color: #efebf9;
+  width: 49%;
+}
+
+#invoice {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#invoice thead tr {
+  /* background-color: #6739c0; */
+  background-color: #efebf9;
+  color: black;
+}
+
+#invoice tbody tr:nth-child(even) {
+  background-color: #efebf9;
+}
+
+.title {
+  color: #653bbc;
+}
+
+.invoice-text {
+  color: #838383;
 }
 
 .error {
@@ -392,5 +467,36 @@ label:not(.form-check-label):not(.custom-file-label) {
 @media (max-width: 1023px) {
   .custom-col-6 {
     width: 50% !important;
+  }
+}
+
+#invoiceBody {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@media print {
+  body,
+  #content-div[size="A4"] {
+    margin: 0;
+    box-shadow: 0;
+  }
+
+  thead {
+    display: table-row-group; /* Hide the table header on pages 2 and onward */
+  }
+
+  @page {
+    margin-bottom: 0;
+    counter-increment: page; /* Increment the page counter for page numbering */
   }
 }
